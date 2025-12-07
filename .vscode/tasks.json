@@ -1,0 +1,21 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build-sfml",
+            "type": "shell",
+            "command": "clang++",
+            "args": [
+                "${workspaceFolder}/project.cpp",
+                "-o", "${workspaceFolder}/app",
+                "-std=c++23",
+                "-I", "/opt/homebrew/include",
+                "-L", "/opt/homebrew/lib",
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "problemMatcher": []
+        }
+    ]
+}
